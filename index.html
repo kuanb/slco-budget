@@ -3,6 +3,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 <style type="text/css">
 
 body {
@@ -17,9 +19,21 @@ body {
 	height: 100%;
 	min-height: 600px;
 }
+
+#twit {
+	position: absolute;
+	top: 15px;
+	right: 245px;
+	color: red
+}
+
 </style>
 
 <body>
+
+<div id="twit">
+	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kuanbutts.com/slco-budget/" data-text="Open Salt Lake County Budget Visualization Tool" data-via="buttsmeister" data-size="large">Tweet</a>
+</div>
 
 <iframe src="http://slco-2016.github.io/slco-budget/" class="frame">
   <p>Your browser does not support iframes. Go <a href="http://slco-2016.github.io/slco-budget/">here</a> to view the project.</p>
